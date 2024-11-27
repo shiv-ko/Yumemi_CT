@@ -1,4 +1,8 @@
+// PrefectureCheckboxList.tsx
+
+import React from 'react';
 import { Prefecture } from './../types/types';
+import '../styles/PrefectureCheckboxList.css'; // CSSファイルをインポート
 
 type Props = {
   prefectures: Prefecture[]; // 都道府県データの配列
@@ -23,11 +27,11 @@ export default function PrefectureCheckboxList({
   };
 
   return (
-    <div>
-      <h2>都道府県</h2>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+    <div className="prefecture-checkbox-list">
+      <h2>都道府県を選択してください</h2>
+      <div className="prefectures">
         {prefectures.map((pref) => (
-          <label key={pref.prefCode} style={{ margin: '5px' }}>
+          <label key={pref.prefCode} className="prefecture-label">
             <input
               type="checkbox"
               value={pref.prefCode}

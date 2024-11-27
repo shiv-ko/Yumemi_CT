@@ -1,0 +1,77 @@
+/* Container for the entire checkbox list */
+.prefecture-checkbox-list {
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Main title */
+.prefecture-checkbox-list h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 12px;
+}
+
+/* Container for prefecture checkboxes */
+.prefectures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Individual prefecture label */
+.prefecture-label {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f7f9fc;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    flex: 1 1 120px;
+    /* Adjust width as needed */
+}
+
+/* Hover effect for labels */
+.prefecture-label:hover {
+    background-color: #e3f2fd;
+    border-color: #3498db;
+}
+
+/* Checkbox input styling */
+.prefecture-label input {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Prefecture name styling */
+.prefecture-label span {
+    font-size: 1rem;
+    color: #2d3436;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .prefecture-checkbox-list {
+        padding: 16px;
+        margin: 20px;
+    }
+
+    .prefecture-label {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .prefecture-label span {
+        font-size: 0.95rem;
+    }
+}

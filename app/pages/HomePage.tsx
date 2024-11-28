@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import PrefectureCheckboxList from '../components/PrefectureCheckboxList';
 import PopulationTypeSelector from '../components/PopulationTypeSelector';
 import PopulationChart from '../components/PopulationChart';
-import { Prefecture} from '../types/types';
+import { Prefecture } from '../types/types';
 import { fetchPrefectures, fetchPopulationComposition } from '../services/api';
 
 export default function HomePage() {
@@ -85,8 +85,8 @@ export default function HomePage() {
         selectedType={selectedType}
         setSelectedType={setSelectedType}
       />
-      {/* 人口データのグラフ */}
-      <PopulationChart data={chartData} />
+      {/* 人口推移グラフ */}
+      <PopulationChart data={chartData} selectedType={selectedType} />
     </div>
   );
 }

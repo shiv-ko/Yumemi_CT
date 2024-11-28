@@ -1,4 +1,3 @@
-
 import {
   ResponsiveContainer,
   LineChart,
@@ -18,11 +17,17 @@ type PrefData = {
 
 type Props = {
   data: PrefData[]; // グラフに表示するデータの配列
+  selectedType: string; // 選択された人口タイプ
 };
 
-export default function PopulationChart({ data }: Props) {
+export default function PopulationChart({ data, selectedType }: Props) {
+  // 人口タイプが選択されていない場合のメッセージ  
+  if (!selectedType) {
+    return <p>人口タイプを選択してください。</p>; 
+  }
+  // 都道府県が選択されていない場合のメッセージ
   if (data.length === 0) {
-    return <p>都道府県を選択してください。</p>; // 都道府県が選択されていない場合のメッセージ
+    return <p>都道府県を選択してください。</p>; 
   }
 
   // グラフ用のデータを整形

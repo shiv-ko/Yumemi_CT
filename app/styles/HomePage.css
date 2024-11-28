@@ -1,0 +1,60 @@
+/* ページ全体のスタイル */
+.page-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 各セクションのスタイル */
+.section {
+    margin-bottom: 20px;
+}
+
+/* チェックボックスリストのスタイル */
+.checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-item {
+    flex: 1 1 30%;
+    padding: 5px;
+    text-align: left;
+}
+
+/* セレクターのスタイル */
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.selector label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* グラフのスタイル */
+.chart-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

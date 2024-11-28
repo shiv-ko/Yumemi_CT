@@ -1,5 +1,3 @@
-// PrefectureCheckboxList.tsx
-
 import React from 'react';
 import { Prefecture } from './../types/types';
 import '../styles/PrefectureCheckboxList.css'; // CSSファイルをインポート

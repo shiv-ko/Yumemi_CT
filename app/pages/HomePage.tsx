@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import PrefectureCheckboxList from '../components/PrefectureCheckboxList';
+import PopulationTypeSelector from '../components/PopulationTypeSelector';
 import { Prefecture } from '../types/types';
 import { fetchPrefectures } from '../services/api';
 
@@ -10,6 +11,8 @@ export default function HomePage() {
   const [prefectures, setPrefectures] = useState<Prefecture[]>([]);
   // 選択された都道府県コードの状態
   const [selectedPrefs, setSelectedPrefs] = useState<number[]>([]);
+  // 選択された人口タイプの状態（初期値：総人口）
+  const [selectedType, setSelectedType] = useState<string>('総人口');
 
   // 初回レンダリング時に都道府県データを取得
   useEffect(() => {
@@ -35,6 +38,11 @@ export default function HomePage() {
         prefectures={prefectures}
         selectedPrefs={selectedPrefs}
         setSelectedPrefs={setSelectedPrefs}
+      />
+      {/* 人口タイプのセレクター */}
+      <PopulationTypeSelector
+        selectedType={selectedType}
+        setSelectedType={setSelectedType}
       />
     </div>
   );

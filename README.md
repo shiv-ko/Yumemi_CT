@@ -18,25 +18,24 @@
 yumemi_ct/
 ├── app/
 │   ├── layout.tsx
+│   ├── globals.css
 │   ├── page.tsx
 │   ├── pages/
 │   │   └── HomePage.tsx
-│   └── components/
-│       ├── PopulationTypeSelector.tsx
-│       ├── PrefectureCheckboxList.tsx
-│       └── PopulationChart.tsx
-├── services/
-│   └── api.ts
-├── types/
-│   └── types.ts
-├── styles/
-│   ├── globals.css
-│   ├── PrefectureCheckboxList.css
-│   ├── PopulationTypeSelector.css
-│   └── HomePage.css
+│   ├── components/
+│   │   ├── PopulationTypeSelector.tsx
+│   │   ├── PrefectureCheckboxList.tsx
+│   │   └── PopulationChart.tsx
+│   ├── services/
+│   │   └── api.ts
+│   ├── types/
+│   │   └── types.ts
+│   ├── styles/
+│       ├── PrefectureCheckboxList.css
+│       ├── PopulationTypeSelector.css
+│       └── HomePage.css
 ├── tests/
-│   └── e2e/
-│       └── example.spec.ts
+│   └── test-1.spec.ts
 ├── public/
 │   └── favicon.ico
 ├── node_modules/
@@ -44,6 +43,7 @@ yumemi_ct/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+
 ```
 
 ## 設計思想
